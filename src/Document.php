@@ -444,6 +444,11 @@ class Document
             return $this->__updated_at;
         }
 
+        if ($field == '__id')
+        {
+            return $this->__id;
+        }
+
         foreach($parts as $part)
         {
             if (trim($part) == '')
